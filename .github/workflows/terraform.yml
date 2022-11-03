@@ -13,9 +13,10 @@ jobs:
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 0.12.18
-          tf_actions_subcommand: "init"
+          tf_actions_subcommand: "validate"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 #GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. 
 #Make code reviews, branch management, and issue triaging work the way you want.
+
